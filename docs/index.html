@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>wellaray.shop — Request Indexing list</title>
+<style>
+:root{--ink:#14201c;--body:#3a4a45;--line:#e3e8e6;--teal:#0A4F44;--go:#1B7F5A;
+      --done:#eef7f2;--card:#fff;--bg:#f6f8f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.6 'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:var(--body);
+     background:var(--bg);padding:0 0 80px}
+header{background:var(--teal);color:#fff;padding:40px 24px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header .wrap{padding:0}
+h1{font-size:30px;line-height:1.2;color:#fff;margin-bottom:10px}
+header p{color:rgba(255,255,255,.9);max-width:80ch}
+.bar{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);
+     padding:14px 0;margin-bottom:8px;box-shadow:0 1px 6px rgba(0,0,0,.05)}
+.bar .wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.prog{flex:1;min-width:220px;height:12px;background:var(--line);border-radius:6px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--go);transition:width .2s}
+.count{font-weight:700;color:var(--ink);white-space:nowrap}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;
+     padding:9px 14px;font-size:14px}
+.btn:hover{border-color:var(--go);color:var(--go)}
+h2{font-size:20px;color:var(--ink);margin:32px 0 4px;display:flex;gap:10px;
+   align-items:baseline;flex-wrap:wrap}
+.hl{font-size:13px;font-weight:400;color:#7c8a85}
+.vol{font-size:13px;font-weight:600;color:var(--go)}
+ol.urls{list-style:none;margin-top:12px}
+.row{display:flex;gap:12px;align-items:center;background:var(--card);
+     border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:6px}
+.tick{display:flex;gap:12px;align-items:center;flex:1;min-width:0;cursor:pointer}
+.row:has(input:checked){background:var(--done);border-color:#bfe0cd}
+.row:has(input:checked) code{text-decoration:line-through;color:#8aa39a}
+input[type=checkbox]{width:20px;height:20px;flex:0 0 auto;accent-color:var(--go)}
+.n{flex:0 0 30px;font-size:13px;color:#93a29d;font-variant-numeric:tabular-nums}
+.meta{flex:1;min-width:0}
+code{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;
+     color:var(--ink);word-break:break-all}
+.meta em{font-style:normal;font-size:12.5px;color:#7c8a85}
+.copy{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:6px;
+      padding:7px 12px;font-size:13px;color:var(--go);font-weight:600}
+.copy:hover{border-color:var(--go)}
+.copy.ok{background:var(--go);color:#fff;border-color:var(--go)}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:8px;padding:16px 18px;
+      margin:20px 0}
+.note b{color:#7a5a12}
+.how{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px;
+     margin:20px 0}
+.how ol{margin:10px 0 0 20px}
+.how li{margin-bottom:6px}
+footer{margin-top:40px;font-size:13px;color:#8a9a95}
+@media(max-width:640px){.row{flex-wrap:wrap}.copy{width:100%}}
+</style></head><body>
+<header><div class="wrap">
+<h1>wellaray.shop — Request Indexing</h1>
+<p>58 live URLs, in the order they should be submitted: biggest market first, country
+hub first inside each market, then by measured search demand. Every URL was verified to
+return 200 before it went on this list.</p>
+</div></header>
+
+<div class="bar"><div class="wrap">
+<span class="count"><span id="done">0</span> / 58 done</span>
+<span class="prog"><i id="pbar"></i></span>
+<button class="btn" id="copyall">Copy all remaining</button>
+<button class="btn" id="reset">Reset progress</button>
+</div></div>
+
+<div class="wrap">
+<div class="note"><b>Why this is manual.</b> The Google Indexing API accepts our URLs
+(HTTP 200) but keeps no record of them — <code>urlNotifications/metadata</code> returns
+404 for every one, including URLs pushed five weeks ago on tryretafit, osanix and
+ozem-plus. It officially supports only JobPosting and BroadcastEvent pages. The sitemap
+is submitted and Google fetched it (58 URLs, 0 errors); Request Indexing in Search
+Console is the only way to push individual pages up the queue.</div>
+
+<div class="how"><b>How to run it</b>
+<ol>
+<li>Open Search Console and select the <b>wellaray.shop</b> property.</li>
+<li>Press <b>Copy</b> on the first row, paste it into the URL Inspection box at the top,
+    press Enter.</li>
+<li>Click <b>Request Indexing</b>, wait for the confirmation, then tick the row here.</li>
+<li>Google limits how many you can request per day. When it stops accepting, stop —
+    your progress is saved in this browser, so you can carry on tomorrow from the first
+    unticked row.</li>
+</ol></div>
+<h2 id="de">Deutschland <span class="hl">de-DE · AT · CH</span> <span class="vol">177,970 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/"><span class="n">1</span><span class="meta"><code>https://wellaray.shop/de/</code><em>Überblick · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/erfahrungen/"><span class="n">2</span><span class="meta"><code>https://wellaray.shop/de/erfahrungen/</code><em>Erfahrungen · targets “wellaray erfahrungen”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/erfahrungen/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/test/"><span class="n">3</span><span class="meta"><code>https://wellaray.shop/de/test/</code><em>Test gesucht? · targets “slim coffee booster test”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/test/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/kaufen/"><span class="n">4</span><span class="meta"><code>https://wellaray.shop/de/kaufen/</code><em>Kaufen · targets “slim coffee booster kaufen”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/kaufen/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/amazon/"><span class="n">5</span><span class="meta"><code>https://wellaray.shop/de/amazon/</code><em>Bei Amazon · targets “wellaray amazon”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/amazon/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/hoehle-der-loewen/"><span class="n">6</span><span class="meta"><code>https://wellaray.shop/de/hoehle-der-loewen/</code><em>Höhle der Löwen · targets “wellaray höhle der löwen”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/hoehle-der-loewen/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/abnehmen/"><span class="n">7</span><span class="meta"><code>https://wellaray.shop/de/abnehmen/</code><em>Zum Abnehmen · targets “wellaray abnehmen”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/abnehmen/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/serioes/"><span class="n">8</span><span class="meta"><code>https://wellaray.shop/de/serioes/</code><em>Seriös? · targets “wellaray seriös”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/serioes/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/inhaltsstoffe/"><span class="n">9</span><span class="meta"><code>https://wellaray.shop/de/inhaltsstoffe/</code><em>Inhaltsstoffe · targets “wellaray inhaltsstoffe”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/inhaltsstoffe/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/nebenwirkungen/"><span class="n">10</span><span class="meta"><code>https://wellaray.shop/de/nebenwirkungen/</code><em>Nebenwirkungen · targets “wellaray nebenwirkungen”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/nebenwirkungen/">Copy</button></div></li>
+</ol>
+<h2 id="uk">United Kingdom <span class="hl">en-GB</span> <span class="vol">81,790 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/"><span class="n">11</span><span class="meta"><code>https://wellaray.shop/uk/</code><em>Overview · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/reviews/"><span class="n">12</span><span class="meta"><code>https://wellaray.shop/uk/reviews/</code><em>Reviews · targets “wellaray slim coffee booster reviews”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/reviews/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/side-effects/"><span class="n">13</span><span class="meta"><code>https://wellaray.shop/uk/side-effects/</code><em>Side effects · targets “wellaray side effects”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/side-effects/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/amazon/"><span class="n">14</span><span class="meta"><code>https://wellaray.shop/uk/amazon/</code><em>On Amazon · targets “wellaray amazon”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/amazon/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/dragons-den/"><span class="n">15</span><span class="meta"><code>https://wellaray.shop/uk/dragons-den/</code><em>Dragons&#x27; Den · targets “wellaray dragons den”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/dragons-den/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/does-it-work/"><span class="n">16</span><span class="meta"><code>https://wellaray.shop/uk/does-it-work/</code><em>Does it work? · targets “does wellaray work”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/does-it-work/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/weight-loss/"><span class="n">17</span><span class="meta"><code>https://wellaray.shop/uk/weight-loss/</code><em>For weight loss · targets “wellaray weight loss”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/weight-loss/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/ingredients/"><span class="n">18</span><span class="meta"><code>https://wellaray.shop/uk/ingredients/</code><em>Ingredients · targets “wellaray ingredients”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/ingredients/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/trustpilot/"><span class="n">19</span><span class="meta"><code>https://wellaray.shop/uk/trustpilot/</code><em>Trustpilot · targets “wellaray trustpilot”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/trustpilot/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/holland-and-barrett/"><span class="n">20</span><span class="meta"><code>https://wellaray.shop/uk/holland-and-barrett/</code><em>Holland &amp; Barrett · targets “wellaray holland and barrett”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/holland-and-barrett/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/is-it-legit/"><span class="n">21</span><span class="meta"><code>https://wellaray.shop/uk/is-it-legit/</code><em>Is it legit? · targets “is wellaray legit”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/is-it-legit/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/where-to-buy/"><span class="n">22</span><span class="meta"><code>https://wellaray.shop/uk/where-to-buy/</code><em>Where to buy · targets “wellaray where to buy”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/where-to-buy/">Copy</button></div></li>
+</ol>
+<h2 id="au">Australia <span class="hl">en-AU</span> <span class="vol">42,720 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/"><span class="n">23</span><span class="meta"><code>https://wellaray.shop/au/</code><em>Overview · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/reviews/"><span class="n">24</span><span class="meta"><code>https://wellaray.shop/au/reviews/</code><em>Reviews · targets “wellaray slim coffee booster reviews”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/reviews/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/side-effects/"><span class="n">25</span><span class="meta"><code>https://wellaray.shop/au/side-effects/</code><em>Side effects · targets “wellaray side effects”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/side-effects/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/amazon/"><span class="n">26</span><span class="meta"><code>https://wellaray.shop/au/amazon/</code><em>On Amazon · targets “wellaray amazon”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/amazon/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/weight-loss/"><span class="n">27</span><span class="meta"><code>https://wellaray.shop/au/weight-loss/</code><em>For weight loss · targets “wellaray weight loss”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/weight-loss/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/does-it-work/"><span class="n">28</span><span class="meta"><code>https://wellaray.shop/au/does-it-work/</code><em>Does it work? · targets “does wellaray work”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/does-it-work/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/ingredients/"><span class="n">29</span><span class="meta"><code>https://wellaray.shop/au/ingredients/</code><em>Ingredients · targets “wellaray ingredients”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/ingredients/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/chemist-warehouse/"><span class="n">30</span><span class="meta"><code>https://wellaray.shop/au/chemist-warehouse/</code><em>Chemist Warehouse · targets “wellaray chemist warehouse”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/chemist-warehouse/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/where-to-buy/"><span class="n">31</span><span class="meta"><code>https://wellaray.shop/au/where-to-buy/</code><em>Where to buy · targets “wellaray where to buy”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/where-to-buy/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/is-it-legit/"><span class="n">32</span><span class="meta"><code>https://wellaray.shop/au/is-it-legit/</code><em>Is it legit? · targets “is wellaray legit”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/is-it-legit/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/au/shark-tank/"><span class="n">33</span><span class="meta"><code>https://wellaray.shop/au/shark-tank/</code><em>Shark Tank · targets “wellaray shark tank”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/au/shark-tank/">Copy</button></div></li>
+</ol>
+<h2 id="ca">Canada <span class="hl">en-CA</span> <span class="vol">21,910 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/"><span class="n">34</span><span class="meta"><code>https://wellaray.shop/ca/</code><em>Overview · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/reviews/"><span class="n">35</span><span class="meta"><code>https://wellaray.shop/ca/reviews/</code><em>Reviews · targets “wellaray slim coffee booster reviews”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/reviews/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/side-effects/"><span class="n">36</span><span class="meta"><code>https://wellaray.shop/ca/side-effects/</code><em>Side effects · targets “wellaray side effects”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/side-effects/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/amazon/"><span class="n">37</span><span class="meta"><code>https://wellaray.shop/ca/amazon/</code><em>On Amazon · targets “wellaray amazon”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/amazon/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/does-it-work/"><span class="n">38</span><span class="meta"><code>https://wellaray.shop/ca/does-it-work/</code><em>Does it work? · targets “does wellaray work”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/does-it-work/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/ingredients/"><span class="n">39</span><span class="meta"><code>https://wellaray.shop/ca/ingredients/</code><em>Ingredients · targets “wellaray ingredients”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/ingredients/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/is-it-legit/"><span class="n">40</span><span class="meta"><code>https://wellaray.shop/ca/is-it-legit/</code><em>Is it legit? · targets “is wellaray legit”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/is-it-legit/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/where-to-buy/"><span class="n">41</span><span class="meta"><code>https://wellaray.shop/ca/where-to-buy/</code><em>Where to buy · targets “wellaray where to buy”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/where-to-buy/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/ca/dragons-den/"><span class="n">42</span><span class="meta"><code>https://wellaray.shop/ca/dragons-den/</code><em>Dragons&#x27; Den · targets “wellaray dragons den”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/ca/dragons-den/">Copy</button></div></li>
+</ol>
+<h2 id="us">United States <span class="hl">en-US</span> <span class="vol">21,070 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/"><span class="n">43</span><span class="meta"><code>https://wellaray.shop/us/</code><em>Overview · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/reviews/"><span class="n">44</span><span class="meta"><code>https://wellaray.shop/us/reviews/</code><em>Reviews · targets “wellaray slim coffee booster reviews”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/reviews/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/side-effects/"><span class="n">45</span><span class="meta"><code>https://wellaray.shop/us/side-effects/</code><em>Side effects · targets “wellaray side effects”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/side-effects/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/amazon/"><span class="n">46</span><span class="meta"><code>https://wellaray.shop/us/amazon/</code><em>On Amazon · targets “wellaray amazon”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/amazon/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/does-it-work/"><span class="n">47</span><span class="meta"><code>https://wellaray.shop/us/does-it-work/</code><em>Does it work? · targets “does wellaray work”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/does-it-work/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/ingredients/"><span class="n">48</span><span class="meta"><code>https://wellaray.shop/us/ingredients/</code><em>Ingredients · targets “wellaray ingredients”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/ingredients/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/is-it-legit/"><span class="n">49</span><span class="meta"><code>https://wellaray.shop/us/is-it-legit/</code><em>Is it legit? · targets “is wellaray legit”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/is-it-legit/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/shark-tank/"><span class="n">50</span><span class="meta"><code>https://wellaray.shop/us/shark-tank/</code><em>Shark Tank · targets “wellaray shark tank”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/shark-tank/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/us/where-to-buy/"><span class="n">51</span><span class="meta"><code>https://wellaray.shop/us/where-to-buy/</code><em>Where to buy · targets “wellaray where to buy”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/us/where-to-buy/">Copy</button></div></li>
+</ol>
+<h2 id="nz">New Zealand <span class="hl">en-NZ</span> <span class="vol">5,700 searches/mo measured</span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/"><span class="n">52</span><span class="meta"><code>https://wellaray.shop/nz/</code><em>Overview · targets “wellaray slim coffee booster”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/reviews/"><span class="n">53</span><span class="meta"><code>https://wellaray.shop/nz/reviews/</code><em>Reviews · targets “wellaray slim coffee booster reviews”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/reviews/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/side-effects/"><span class="n">54</span><span class="meta"><code>https://wellaray.shop/nz/side-effects/</code><em>Side effects · targets “wellaray side effects”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/side-effects/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/ingredients/"><span class="n">55</span><span class="meta"><code>https://wellaray.shop/nz/ingredients/</code><em>Ingredients · targets “wellaray ingredients”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/ingredients/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/is-it-legit/"><span class="n">56</span><span class="meta"><code>https://wellaray.shop/nz/is-it-legit/</code><em>Is it legit? · targets “is wellaray legit”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/is-it-legit/">Copy</button></div></li>
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/nz/where-to-buy/"><span class="n">57</span><span class="meta"><code>https://wellaray.shop/nz/where-to-buy/</code><em>Where to buy · targets “wellaray where to buy”</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/nz/where-to-buy/">Copy</button></div></li>
+</ol>
+<h2 id="root">Country index <span class="hl"></span></h2>
+<ol class="urls">
+<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/"><span class="n">58</span><span class="meta"><code>https://wellaray.shop/</code><em>Country index</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/">Copy</button></div></li>
+</ol>
+<footer>Generated from the live sitemap on 28 August 2026 · all 58 URLs verified 200 ·
+this page is noindex.</footer>
+</div>
+
+<script>
+(function(){
+  var K='wellaray-index-v1';
+  var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+  function paint(){
+    var d=boxes.filter(function(b){return b.checked}).length;
+    document.getElementById('done').textContent=d;
+    document.getElementById('pbar').style.width=(d/boxes.length*100)+'%';
+  }
+  boxes.forEach(function(b){
+    if(saved[b.dataset.u]) b.checked=true;
+    b.addEventListener('change',function(){
+      saved[b.dataset.u]=b.checked;
+      try{localStorage.setItem(K,JSON.stringify(saved))}catch(e){}
+      paint();
+    });
+  });
+  paint();
+  function copy(t,btn){
+    // synchronous first: it works inside the user gesture and needs no permission.
+    var ok=fallback(t);
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      try{ navigator.clipboard.writeText(t).catch(function(){}); }catch(e){}
+    }
+    if(btn){var o=btn.dataset.label||btn.textContent; btn.dataset.label=o;
+      btn.textContent=ok?'Copied':'Press Ctrl+C';
+      btn.classList.add('ok');
+      setTimeout(function(){btn.textContent=o;btn.classList.remove('ok')},1200);}
+  }
+  function fallback(t){
+    var a=document.createElement('textarea');a.value=t;a.style.position='fixed';
+    a.style.top='0';a.style.opacity='0';document.body.appendChild(a);
+    a.focus();a.select();
+    var ok=false; try{ ok=document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(a); return ok;
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('.copy');
+    if(!b) return;
+    e.preventDefault(); e.stopPropagation();
+    copy(b.dataset.u,b);
+  });
+  document.getElementById('copyall').addEventListener('click',function(){
+    var rest=boxes.filter(function(b){return !b.checked})
+                  .map(function(b){return b.dataset.u}).join('\n');
+    copy(rest,this);
+  });
+  document.getElementById('reset').addEventListener('click',function(){
+    if(!confirm('Clear all ticks?')) return;
+    saved={}; try{localStorage.removeItem(K)}catch(e){}
+    boxes.forEach(function(b){b.checked=false}); paint();
+  });
+})();
+</script>
+</body></html>
