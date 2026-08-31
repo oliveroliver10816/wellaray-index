@@ -1,159 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>wellaray.shop — Request Indexing list</title>
+<title>wellaray.shop — Request Indexing</title>
 <style>
-:root{--ink:#14201c;--body:#3a4a45;--line:#e3e8e6;--teal:#0A4F44;--go:#1B7F5A;
-      --done:#eef7f2;--card:#fff;--bg:#f6f8f7}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font:16px/1.6 'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:var(--body);
-     background:var(--bg);padding:0 0 80px}
-header{background:var(--teal);color:#fff;padding:40px 24px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-header .wrap{padding:0}
-h1{font-size:30px;line-height:1.2;color:#fff;margin-bottom:10px}
-header p{color:rgba(255,255,255,.9);max-width:80ch}
-.bar{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);
-     padding:14px 0;margin-bottom:8px;box-shadow:0 1px 6px rgba(0,0,0,.05)}
-.bar .wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.prog{flex:1;min-width:220px;height:12px;background:var(--line);border-radius:6px;overflow:hidden}
-.prog i{display:block;height:100%;width:0;background:var(--go);transition:width .2s}
-.count{font-weight:700;color:var(--ink);white-space:nowrap}
-button{font:inherit;cursor:pointer}
-.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;
-     padding:9px 14px;font-size:14px}
-.btn:hover{border-color:var(--go);color:var(--go)}
-h2{font-size:20px;color:var(--ink);margin:32px 0 4px;display:flex;gap:10px;
-   align-items:baseline;flex-wrap:wrap}
-.hl{font-size:13px;font-weight:400;color:#7c8a85}
-.vol{font-size:13px;font-weight:600;color:var(--go)}
-ol.urls{list-style:none;margin-top:12px}
-.row{display:flex;gap:12px;align-items:center;background:var(--card);
-     border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:6px}
-.tick{display:flex;gap:12px;align-items:center;flex:1;min-width:0;cursor:pointer}
-.row:has(input:checked){background:var(--done);border-color:#bfe0cd}
-.row:has(input:checked) code{text-decoration:line-through;color:#8aa39a}
-input[type=checkbox]{width:20px;height:20px;flex:0 0 auto;accent-color:var(--go)}
-.n{flex:0 0 30px;font-size:13px;color:#93a29d;font-variant-numeric:tabular-nums}
-.meta{flex:1;min-width:0}
-code{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;
-     color:var(--ink);word-break:break-all}
-.meta em{font-style:normal;font-size:12.5px;color:#7c8a85}
-.copy{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:6px;
-      padding:7px 12px;font-size:13px;color:var(--go);font-weight:600}
-.copy:hover{border-color:var(--go)}
-.copy.ok{background:var(--go);color:#fff;border-color:var(--go)}
-.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:8px;padding:16px 18px;
-      margin:20px 0}
-.note b{color:#7a5a12}
-.how{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px;
-     margin:20px 0}
-.how ol{margin:10px 0 0 20px}
-.how li{margin-bottom:6px}
-footer{margin-top:40px;font-size:13px;color:#8a9a95}
-@media(max-width:640px){.row{flex-wrap:wrap}.copy{width:100%}}
-.skip{list-style:none;margin-top:10px}.skip li{background:#eef7f2;border:1px solid #bfe0cd;border-radius:8px;padding:9px 12px;margin-bottom:6px;font-size:14px}.skip em{font-style:normal;color:#5d7d6c;margin-left:8px}</style></head><body>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font:17px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+ color:#1c2024;background:#f4f5f7;padding:0 0 80px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:#0A4F44;color:#fff;padding:34px 0 30px;margin-bottom:26px}
+header h1{font-size:27px;line-height:1.25;margin-bottom:8px}
+header p{opacity:.92;font-size:16px;max-width:72ch}
+.big{background:#fff;border:2px solid #0A4F44;border-radius:10px;padding:22px;margin:0 0 24px}
+.big h2{font-size:20px;margin-bottom:10px;color:#0A4F44}
+.big ol,.big ul{margin:12px 0 0 22px}.big li{margin-bottom:9px}
+.prog{position:sticky;top:0;background:#fff;border-bottom:2px solid #0A4F44;
+ padding:13px 0;z-index:9;margin-bottom:22px;font-weight:700}
+h2.geo{font-size:21px;margin:32px 0 4px;color:#0A4F44}
+h2.geo .hl{font-weight:400;font-size:15px;color:#5b636c}
+h2.geo .vol{font-weight:700;font-size:15px;color:#0A4F44}
+ol.urls{list-style:none;margin-top:14px}
+ol.urls li{margin-bottom:10px}
+.row{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #d8dbe0;
+ border-radius:9px;padding:14px 16px}
+.row.done{opacity:.5;border-color:#00C249;background:#F6FFF9}
+.tick{display:flex;align-items:center;gap:12px;flex:1;min-width:0;cursor:pointer;
+ min-height:44px}
+.tick input{width:22px;height:22px;flex:0 0 22px}
+.n{background:#eef0f3;border-radius:50%;width:30px;height:30px;flex:0 0 30px;
+ display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.meta{min-width:0;flex:1}
+.meta code{display:block;font:14px/1.45 ui-monospace,Menlo,Consolas,monospace;
+ word-break:break-all;color:#1c2024}
+.meta em{display:block;font-style:normal;font-size:14px;color:#5b636c;margin-top:3px}
+button{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:7px;
+ padding:11px 18px;cursor:pointer;background:#0A4F44;color:#fff;min-height:44px;
+ flex:0 0 auto}
+button:hover{background:#0C5F52}
+button.ok{background:#00C249;color:#04231E}
+@media(max-width:640px){.row{flex-wrap:wrap}.meta code{font-size:13px}}
+</style>
+</head><body>
+
 <header><div class="wrap">
-<h1>wellaray.shop — Request Indexing</h1>
-<p><b>18 URLs Google has never crawled.</b> Re-checked one by one against the Search Console URL Inspection API on 29 August 2026. <b>10 of 58 are already indexed</b> and are left off this list — the whole German deck bar one page, plus the UK hub, all picked up from the sitemap alone within 24 hours.</p>
+  <h1>wellaray.shop — Request Indexing</h1>
+  <p>18 pages Google has not crawled yet. 23 of 41 are already indexed.
+     Biggest pages first — do them from the top.</p>
 </div></header>
 
-<div class="bar"><div class="wrap">
-<span class="count"><span id="done">0</span> / 48 done</span>
-<span class="prog"><i id="pbar"></i></span>
-<button class="btn" id="copyall">Copy all remaining</button>
-<button class="btn" id="reset">Reset progress</button>
-</div></div>
-
 <div class="wrap">
-<div class="note"><b>Why this is manual.</b> The Google Indexing API accepts our URLs
-(HTTP 200) but keeps no record of them — <code>urlNotifications/metadata</code> returns
-404 for every one, including URLs pushed five weeks ago on tryretafit, osanix and
-ozem-plus. It officially supports only JobPosting and BroadcastEvent pages. The sitemap
-is submitted and Google fetched it (18 URLs, 0 errors); Request Indexing in Search
-Console is the only way to push individual pages up the queue.</div>
+<div class="prog" id="prog">0 of 18 submitted</div>
 
-<div class="how"><b>How to run it</b>
-<ol>
-<li>Open Search Console and select the <b>wellaray.shop</b> property.</li>
-<li>Press <b>Copy</b> on the first row, paste it into the URL Inspection box at the top,
-    press Enter.</li>
-<li>Click <b>Request Indexing</b>, wait for the confirmation, then tick the row here.</li>
-<li>Google limits how many you can request per day. When it stops accepting, stop —
-    your progress is saved in this browser, so you can carry on tomorrow from the first
-    unticked row.</li>
-</ol></div>
-<div class="how"><b>Use more than one Google account — the quota is per user, not per site</b>
-<ol>
-<li>In Search Console → Settings → <b>Users and permissions</b>, add each new Gmail as an
-    <b>Owner</b> on <code>wellaray.shop</code>.</li>
-<li>Each owner gets their <b>own</b> daily Request-Indexing allowance. Four owners
-    working in four browser profiles submit roughly four times as many URLs a day.</li>
-<li>Split this list between them by country block so nobody submits the same URL twice —
-    give one person Deutschland, another the UK, and so on.</li>
-<li>Ticks are saved per browser, so each person keeps their own progress.</li>
-</ol></div>
-<h2 id="de">Deutschland <span class="hl">de-DE · AT · CH</span> <span class="vol">177,970 searches/mo</span></h2>
-<ol class="urls">
-<li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/where-to-buy/"><span class="n">1</span><span class="meta"><code>https://wellaray.shop/uk/where-to-buy/</code><em>wellaray where to buy uk · 1,300/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/where-to-buy/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/where-to-buy/"><span class="n">2</span><span class="meta"><code>https://wellaray.shop/en/where-to-buy/</code><em>where to buy wellaray coffee booster · 880/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/where-to-buy/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/ingredients/"><span class="n">3</span><span class="meta"><code>https://wellaray.shop/uk/ingredients/</code><em>wellaray ingredients · 480/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/ingredients/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/amazon/"><span class="n">4</span><span class="meta"><code>https://wellaray.shop/uk/amazon/</code><em>wellaray amazon · 390/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/amazon/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/ingredients/"><span class="n">5</span><span class="meta"><code>https://wellaray.shop/en/ingredients/</code><em>wellaray ingredients · 390/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/ingredients/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/dragons-den/"><span class="n">6</span><span class="meta"><code>https://wellaray.shop/uk/dragons-den/</code><em>wellaray dragons den · 320/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/dragons-den/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/amazon/"><span class="n">7</span><span class="meta"><code>https://wellaray.shop/en/amazon/</code><em>wellaray amazon · 320/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/amazon/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/shark-tank/"><span class="n">8</span><span class="meta"><code>https://wellaray.shop/en/shark-tank/</code><em>wellaray shark tank · 260/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/shark-tank/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/does-it-work/"><span class="n">9</span><span class="meta"><code>https://wellaray.shop/uk/does-it-work/</code><em>does wellaray work · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/does-it-work/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/weight-loss/"><span class="n">10</span><span class="meta"><code>https://wellaray.shop/en/weight-loss/</code><em>wellaray weight loss · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/weight-loss/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/chemist-warehouse/"><span class="n">11</span><span class="meta"><code>https://wellaray.shop/en/chemist-warehouse/</code><em>wellaray chemist warehouse · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/chemist-warehouse/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/weight-loss/"><span class="n">12</span><span class="meta"><code>https://wellaray.shop/uk/weight-loss/</code><em>wellaray weight loss · 170/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/weight-loss/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/abnehmen/"><span class="n">13</span><span class="meta"><code>https://wellaray.shop/de/abnehmen/</code><em>wellaray abnehmen · 170/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/abnehmen/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/holland-and-barrett/"><span class="n">14</span><span class="meta"><code>https://wellaray.shop/uk/holland-and-barrett/</code><em>wellaray holland and barrett · 140/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/holland-and-barrett/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/wirkung/"><span class="n">15</span><span class="meta"><code>https://wellaray.shop/de/wirkung/</code><em>slim coffee booster wirkung · 120/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/wirkung/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/dragons-den/"><span class="n">16</span><span class="meta"><code>https://wellaray.shop/en/dragons-den/</code><em>wellaray dragons den · 110/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/dragons-den/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/trustpilot/"><span class="n">17</span><span class="meta"><code>https://wellaray.shop/uk/trustpilot/</code><em>wellaray trustpilot · 90/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/trustpilot/">Copy</button><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/trustpilot/"><span class="n">18</span><span class="meta"><code>https://wellaray.shop/en/trustpilot/</code><em>wellaray trustpilot · 70/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/trustpilot/">Copy</button></div></li>
-</ol><h2>Already indexed — do not submit</h2><ul class="skip"><li><code>https://wellaray.shop/de/</code> <em>indexed 2026-08-28</em></li><li><code>https://wellaray.shop/de/amazon/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/erfahrungen/</code> <em>indexed 2026-08-28</em></li><li><code>https://wellaray.shop/de/hoehle-der-loewen/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/inhaltsstoffe/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/kaufen/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/nebenwirkungen/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/serioes/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/de/test/</code> <em>indexed 2026-08-29</em></li><li><code>https://wellaray.shop/uk/</code> <em>indexed 2026-08-28</em></li></ul><footer>Crawl status re-pulled 29 August 2026 · 48 of 58 still uncrawled · this page is noindex </footer>
+<div class="big">
+  <h2>What to do</h2>
+  <ol>
+    <li>Open <b>Google Search Console</b> and pick the <b>wellaray.shop</b> property.</li>
+    <li>Press <b>Copy</b> on the first line here.</li>
+    <li>Paste it into the search box at the very top of Search Console. Press Enter.</li>
+    <li>Wait for it to finish, then click <b>Request Indexing</b>.</li>
+    <li>Come back and tick the box on that line.</li>
+    <li>Do the next one.</li>
+  </ol>
 </div>
 
+<div class="big">
+  <h2>If it says you have run out</h2>
+  <p>Google allows only about <b>10 to 12 requests a day per account</b>. When it stops
+     letting you, that is normal — it is not an error.</p>
+  <ul>
+    <li>Add another Gmail as an <b>Owner</b> of the property, then sign in as that one and
+        carry on. Each owner gets their own daily allowance.</li>
+    <li>Split the list by country block so two people never submit the same address.</li>
+    <li>Or simply come back tomorrow and continue from where you stopped.</li>
+  </ul>
+  <p style="margin-top:10px">Your ticks are saved in your own browser, so each person
+     keeps their own progress.</p>
+</div>
+
+<h2 class="geo">Deutschland <span class="hl">de-DE · AT · CH</span> <span class="vol">290 searches/mo</span></h2><ol class="urls"><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/abnehmen/"><span class="n">1</span><span class="meta"><code>https://wellaray.shop/de/abnehmen/</code><em>wellaray abnehmen · 170/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/abnehmen/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/de/wirkung/"><span class="n">2</span><span class="meta"><code>https://wellaray.shop/de/wirkung/</code><em>slim coffee booster wirkung · 120/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/de/wirkung/">Copy</button></div></li></ol><h2 class="geo">United Kingdom <span class="hl">en-GB</span> <span class="vol">3,100 searches/mo</span></h2><ol class="urls"><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/where-to-buy/"><span class="n">3</span><span class="meta"><code>https://wellaray.shop/uk/where-to-buy/</code><em>wellaray where to buy uk · 1,300/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/where-to-buy/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/ingredients/"><span class="n">4</span><span class="meta"><code>https://wellaray.shop/uk/ingredients/</code><em>wellaray ingredients · 480/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/ingredients/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/amazon/"><span class="n">5</span><span class="meta"><code>https://wellaray.shop/uk/amazon/</code><em>wellaray amazon · 390/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/amazon/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/dragons-den/"><span class="n">6</span><span class="meta"><code>https://wellaray.shop/uk/dragons-den/</code><em>wellaray dragons den · 320/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/dragons-den/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/does-it-work/"><span class="n">7</span><span class="meta"><code>https://wellaray.shop/uk/does-it-work/</code><em>does wellaray work · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/does-it-work/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/weight-loss/"><span class="n">8</span><span class="meta"><code>https://wellaray.shop/uk/weight-loss/</code><em>wellaray weight loss · 170/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/weight-loss/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/holland-and-barrett/"><span class="n">9</span><span class="meta"><code>https://wellaray.shop/uk/holland-and-barrett/</code><em>wellaray holland and barrett · 140/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/holland-and-barrett/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/uk/trustpilot/"><span class="n">10</span><span class="meta"><code>https://wellaray.shop/uk/trustpilot/</code><em>wellaray trustpilot · 90/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/uk/trustpilot/">Copy</button></div></li></ol><h2 class="geo">US · Canada · Australia · New Zealand <span class="hl">en-US</span> <span class="vol">2,450 searches/mo</span></h2><ol class="urls"><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/where-to-buy/"><span class="n">11</span><span class="meta"><code>https://wellaray.shop/en/where-to-buy/</code><em>where to buy wellaray coffee booster · 880/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/where-to-buy/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/ingredients/"><span class="n">12</span><span class="meta"><code>https://wellaray.shop/en/ingredients/</code><em>wellaray ingredients · 390/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/ingredients/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/amazon/"><span class="n">13</span><span class="meta"><code>https://wellaray.shop/en/amazon/</code><em>wellaray amazon · 320/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/amazon/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/shark-tank/"><span class="n">14</span><span class="meta"><code>https://wellaray.shop/en/shark-tank/</code><em>wellaray shark tank · 260/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/shark-tank/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/weight-loss/"><span class="n">15</span><span class="meta"><code>https://wellaray.shop/en/weight-loss/</code><em>wellaray weight loss · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/weight-loss/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/chemist-warehouse/"><span class="n">16</span><span class="meta"><code>https://wellaray.shop/en/chemist-warehouse/</code><em>wellaray chemist warehouse · 210/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/chemist-warehouse/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/dragons-den/"><span class="n">17</span><span class="meta"><code>https://wellaray.shop/en/dragons-den/</code><em>wellaray dragons den · 110/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/dragons-den/">Copy</button></div></li><li><div class="row"><label class="tick"><input type="checkbox" data-u="https://wellaray.shop/en/trustpilot/"><span class="n">18</span><span class="meta"><code>https://wellaray.shop/en/trustpilot/</code><em>wellaray trustpilot · 70/mo</em></span></label><button type="button" class="copy" data-u="https://wellaray.shop/en/trustpilot/">Copy</button></div></li></ol>
+
+<p style="margin-top:30px;color:#5b636c;font-size:15px">
+  This page is hidden from Google. Ticks are saved in this browser only.
+</p>
+
+</div>
 <script>
-(function(){
-  var K='wellaray-index-v1';
-  var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox]'));
-  var saved={};
-  try{saved=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
-  function paint(){
-    var d=boxes.filter(function(b){return b.checked}).length;
-    document.getElementById('done').textContent=d;
-    document.getElementById('pbar').style.width=(d/boxes.length*100)+'%';
-  }
-  boxes.forEach(function(b){
-    if(saved[b.dataset.u]) b.checked=true;
-    b.addEventListener('change',function(){
-      saved[b.dataset.u]=b.checked;
-      try{localStorage.setItem(K,JSON.stringify(saved))}catch(e){}
-      paint();
-    });
+const K='wellaray-crawl-v2';
+const st=JSON.parse(localStorage.getItem(K)||'{}');
+function paint(){
+  let n=0;
+  document.querySelectorAll('.row').forEach(r=>{
+    const u=r.querySelector('.tick input').dataset.u, on=!!st[u];
+    r.classList.toggle('done',on);
+    r.querySelector('.tick input').checked=on;
+    if(on)n++;
   });
-  paint();
-  function copy(t,btn){
-    // synchronous first: it works inside the user gesture and needs no permission.
-    var ok=fallback(t);
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      try{ navigator.clipboard.writeText(t).catch(function(){}); }catch(e){}
-    }
-    if(btn){var o=btn.dataset.label||btn.textContent; btn.dataset.label=o;
-      btn.textContent=ok?'Copied':'Press Ctrl+C';
-      btn.classList.add('ok');
-      setTimeout(function(){btn.textContent=o;btn.classList.remove('ok')},1200);}
-  }
-  function fallback(t){
-    var a=document.createElement('textarea');a.value=t;a.style.position='fixed';
-    a.style.top='0';a.style.opacity='0';document.body.appendChild(a);
-    a.focus();a.select();
-    var ok=false; try{ ok=document.execCommand('copy'); }catch(e){}
-    document.body.removeChild(a); return ok;
-  }
-  document.addEventListener('click',function(e){
-    var b=e.target.closest('.copy');
-    if(!b) return;
-    e.preventDefault(); e.stopPropagation();
-    copy(b.dataset.u,b);
-  });
-  document.getElementById('copyall').addEventListener('click',function(){
-    var rest=boxes.filter(function(b){return !b.checked})
-                  .map(function(b){return b.dataset.u}).join('\n');
-    copy(rest,this);
-  });
-  document.getElementById('reset').addEventListener('click',function(){
-    if(!confirm('Clear all ticks?')) return;
-    saved={}; try{localStorage.removeItem(K)}catch(e){}
-    boxes.forEach(function(b){b.checked=false}); paint();
-  });
-})();
+  document.getElementById('prog').textContent =
+    n+' of '+document.querySelectorAll('.row').length+' submitted';
+}
+function copy(t,btn){
+  const done=()=>{const o=btn.textContent;btn.textContent='Copied';btn.classList.add('ok');
+    setTimeout(()=>{btn.textContent=o;btn.classList.remove('ok')},1300)};
+  const ta=document.createElement('textarea');
+  ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  let ok=false;try{ok=document.execCommand('copy')}catch(e){}
+  document.body.removeChild(ta);
+  if(ok){done();return}
+  if(navigator.clipboard)navigator.clipboard.writeText(t).then(done).catch(()=>{});
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button.copy');
+  if(b) copy(b.dataset.u,b);
+});
+document.addEventListener('change',e=>{
+  const i=e.target.closest('.tick input');
+  if(!i)return;
+  if(i.checked) st[i.dataset.u]=1; else delete st[i.dataset.u];
+  localStorage.setItem(K,JSON.stringify(st));paint();
+});
+paint();
 </script>
 </body></html>
