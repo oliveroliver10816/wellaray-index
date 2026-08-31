@@ -114,12 +114,30 @@ document.addEventListener('click',e=>{
   const b=e.target.closest('button[data-copy]');
   if(b) copy(document.getElementById(b.dataset.copy).textContent,b);
 });
+document.addEventListener('input',e=>{
+  const i=e.target.closest('input.pub');
+  if(!i) return;
+  st['url_'+i.dataset.id]=i.value.trim();
+  localStorage.setItem(K,JSON.stringify(st));
+});
 document.addEventListener('change',e=>{
   const i=e.target.closest('.fin input');
   if(!i) return;
   const id=i.closest('.card').dataset.id;
   if(i.checked) st[id]=1; else delete st[id];
   localStorage.setItem(K,JSON.stringify(st)); paint();
+});
+document.querySelectorAll('input.pub').forEach(i=>{
+  const v=st['url_'+i.dataset.id]; if(v) i.value=v;
+});
+document.getElementById('sendall').addEventListener('click',function(){
+  let out=[];
+  document.querySelectorAll('.card').forEach((c,n)=>{
+    const t=c.querySelector('.who b').textContent.trim();
+    const u=(c.querySelector('input.pub')||{}).value||'';
+    out.push((n+1)+'. '+t+'\\n   '+(u.trim()||'NOT DONE YET'));
+  });
+  copy('WELLARAY BACKLINKS\\n\\n'+out.join('\\n\\n'), this);
 });
 paint();
 """
@@ -175,6 +193,11 @@ def card(i, a):
 
   <div class="fin">
     <label><input type="checkbox"> I published this one and the link is blue</label>
+  </div>
+  <div class="row" style="border-top:0;padding-top:4px">
+    <span class="lab">Paste it here</span>
+    <input class="pub" data-id="{E(k)}" placeholder="Address of the page you just published"
+           style="flex:1;min-width:220px;padding:12px;border:2px solid #d8dbe0;border-radius:7px;font:inherit;font-size:15px">
   </div>
 </article>"""
 
@@ -247,8 +270,13 @@ def main():
 
 {cards}
 
-<p style="margin-top:30px;color:#5b636c;font-size:15px">
-  Your ticks are saved in this browser. You can close the page and come back.
+<div class="big" style="margin-top:30px">
+  <h2>When you finish — send the links back</h2>
+  <p>Press the button. It copies all 8 lines. Paste them into WhatsApp for Bob.</p>
+  <p style="margin-top:14px"><button id="sendall">Copy all 8 links to send</button></p>
+</div>
+<p style="margin-top:20px;color:#5b636c;font-size:15px">
+  Your ticks and links are saved in this browser. You can close the page and come back.
 </p>
 
 </div>
